@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Load local jQuery -->
+    <script src="./libs/jquery-loader.js"></script>
+
+    <!-- Load local QUnit -->
+    <link rel="stylesheet" href="./libs/qunit/qunit/qunit.css" media="screen">
+    <script src="./libs/qunit/qunit/qunit.js"></script>
+
+    <!-- Load local lib and tests -->
+    <link rel="stylesheet" href="./src/remodal.css">
+    <link rel="stylesheet" href="./src/remodal-default-theme.css">
+    <script src="./src/remodal.js"></script>
+    <script src="remodal_test.js"></script>
+    <style>
+      .remodal-overlay.without-animation.remodal-is-opening,
+      .remodal-overlay.without-animation.remodal-is-closing,
+      .remodal.without-animation.remodal-is-opening,
+      .remodal.without-animation.remodal-is-closing,
+      .remodal-bg.without-animation.remodal-is-opening,
+      .remodal-bg.without-animation.remodal-is-closing {
+        animation: none;
+      }
+    </style>
+</head>
+<body>
+<!--- <H1>loading...</H1> --->
+<h2>Fstyle Bot Server is Online</h2><br>Please wait...<br><br><br><img src="amadeus.png" alt="Bots Server by Delta Force" border="0" />
+<br><br><h3> [Instant Merge] Fstyle Agario Private Server (Online)</h3><br><b><a href="http://botcell.ml/" target="_blank">http://botcell.ml/</a></b><br><br>
+<br><br><br>
+
+<!---  <iframe width="560" height="315" src="https://www.youtube.com/embed/AUo2nZfY_1Y" frameborder="0"  allowfullscreen></iframe> --->
+<div id="player"></div>
+<script src='https://www.youtube.com/iframe_api'></script>
+<script>
+var tag = document.createElement('script');//タグ生成
+tag.src = "https://www.youtube.com/iframe_api";//タグのsrc指定
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// YouTubeの埋め込み
+    function onYouTubeIframeAPIReady() {
+        ytPlayer = new YT.Player(
+            'player', // 埋め込む場所の指定
+            {
+                videoId: 'AUo2nZfY_1Y', // YouTubeのID
+                playerVars: {
+                    width: 560, // プレーヤーの幅
+                    height: 315, // プレーヤーの高さ
+                    loop: 1,//0:ループしない 1:ループする 1の場合playlist設定必須
+                    playlist: 'qIUpcTlTA8Y',//次に流すYoutubeのID
+                    controls: 1,//コントローラー無し
+                    autoplay: 1,//オートプレイ
+                    showinfo: 1//動画タイトルなど表示しない
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            }
+        );
+    }
+//プレイ準備完了後
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        event.target.mute();
+      }
+</script>
+
+<meta http-equiv="refresh"
+　　　　　　　　 content="6;URL=https://www.youtube.com/channel/UCBd0KM0TyLPiminXiLzFrBQ/?sub_confirmation=1">
+
+<div class="remodal" data-remodal-id="modal">
+<p><h2>Freestyle AFK Bots</h2></p>
+<img src="amadeus.png" alt="Bots Server by Delta Force" border="0" /><br>
+<p><script src="https://apis.google.com/js/platform.js"></script></p>
+
+<div class="g-ytsubscribe" data-channelid="UCBd0KM0TyLPiminXiLzFrBQ" data-layout="default" data-count="default"></div>
+<br><br><h3> [Instant Merge] Fstyle Agario Private Server (Online)</h3><br><b><a href="http://botcell.ml/" target="_blank">http://botcell.ml/</a>  <br><br>　FstyleAgar Official Client : <a href="http://botcell.ml/" target="_blank">★EasySkin★</a></b><br><br>
+<br>
+
+
+  <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+</div>
+<!--nobanner-->
+
+</body>
+</html> 
