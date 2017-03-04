@@ -106,7 +106,7 @@
             }
         }
         ;
-        var ents = 0;
+        var ents = 17;
         var ownerIndex = rand(0,ents-1); // 0 to 17
         for (var i = 0; i < ents; i++)
             $this.entities.push(new Entity($this));
