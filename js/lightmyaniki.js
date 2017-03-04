@@ -56,7 +56,7 @@
             if(runOnce) {
                 for(var i=0; i<this.entities.length; i++) {
                     var thumbImg = document.createElement('img');
-                    thumbImg.src = 'img/new/'+i+'.png';
+                    thumbImg.src = '';
                     thumbPics.push(thumbImg);
                 }
                 randz = rand(0,thumbPics.length-1);
