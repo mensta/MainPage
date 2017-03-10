@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Load local jQuery -->
+    <script src="../libs/jquery-loader.js"></script>
+
+    <!-- Load local QUnit -->
+    <link rel="stylesheet" href="../libs/qunit/qunit/qunit.css" media="screen">
+    <script src="../libs/qunit/qunit/qunit.js"></script>
+
+    <!-- Load local lib and tests -->
+    <link rel="stylesheet" href="../src/remodal.css">
+    <link rel="stylesheet" href="../src/remodal-default-theme.css">
+    <script src="../src/remodal.js"></script>
+    <script src="../remodal_test.js"></script>
+    <style>
+      .remodal-overlay.without-animation.remodal-is-opening,
+      .remodal-overlay.without-animation.remodal-is-closing,
+      .remodal.without-animation.remodal-is-opening,
+      .remodal.without-animation.remodal-is-closing,
+      .remodal-bg.without-animation.remodal-is-opening,
+      .remodal-bg.without-animation.remodal-is-closing {
+        animation: none;
+      }
+    </style>
+</head>
+
+<div class="remodal" data-remodal-id="AAA">
+<p><h2></h2></p>
+<hr>
+<p><script src="https://apis.google.com/js/platform.js"></script></p>
+<div class="g-ytsubscribe" data-channelid="UCBd0KM0TyLPiminXiLzFrBQ" data-layout="default" data-count="default"></div>
+<h4> http://fstyle.ga/ Å® <a href="http://99.k.vu/">http://99.k.vu/</a></h4><br>
+<img src="./images/amadeus.png" alt="Fstyle Server by Delta Force" border="0" /><br>
+<br>
+
+  <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+</div>
+
+<script>
+location.hash = 'AAA';
+</script>
+</html>
