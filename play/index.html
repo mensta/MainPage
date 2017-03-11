@@ -30,13 +30,65 @@
                 margin-left: 0;
             }
         </style>
+
+    <!-- Load local jQuery -->
+    <script src="../libs/jquery-loader.js"></script>
+
+    <!-- Load local QUnit -->
+    <link rel="stylesheet" href="../libs/qunit/qunit/qunit.css" media="screen">
+    <script src="../libs/qunit/qunit/qunit.js"></script>
+
+    <!-- Load local lib and tests -->
+    <link rel="stylesheet" href="../src/remodal.css">
+    <link rel="stylesheet" href="../src/remodal-default-theme.css">
+    <script src="../src/remodal.js"></script>
+    <script src="../remodal_test.js"></script>
+    <style>
+      .remodal-overlay.without-animation.remodal-is-opening,
+      .remodal-overlay.without-animation.remodal-is-closing,
+      .remodal.without-animation.remodal-is-opening,
+      .remodal.without-animation.remodal-is-closing,
+      .remodal-bg.without-animation.remodal-is-opening,
+      .remodal-bg.without-animation.remodal-is-closing {
+        animation: none;
+      }
+    </style>
 </head>
 <body>
 
         <div id="container">
             <iframe src="http://freestyle-games.ml/"></iframe>
         </div>
-</body>
 
+<div class="remodal" data-remodal-id="modal">
+<p><h2>Thanks for playing!</h2></p>
+<img src="./amadeus.png" alt="Delta Force" border="0" /><br>
+<!--タグはここから--><table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><img src="http://www.rays-counter.com/d369_f6_002/588cdc3fb184e/" alt="" border="0"></td></tr></table><!--ここまで-->
+<p><script src="https://apis.google.com/js/platform.js"></script></p>
+
+<div class="g-ytsubscribe" data-channelid="UCBd0KM0TyLPiminXiLzFrBQ" data-layout="default" data-count="default"></div>
+<br><br><br><b></b><br>
+
+
+  <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+</div>
+
+
+
+
+
+
+<div class="remodal" data-remodal-id="info-modal">
+<p><h2>FstyleAgar Skin Requests</h2></p>
+<br>
+</p>
+post your skin url.  it may be adopted.<br><a href="https://goo.gl/iN9Cc2">https://goo.gl/iN9Cc2</a><br>hash tag: #lightmyaniki<br><br><b></b><br>
+
+  <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+</div>
+<!---  <script>
+location.hash = 'info-modal';
+</script> --->
+</body>
 
 </html>
